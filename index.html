@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Peddy</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body class="lato-regular">
+    <!-- header -->
+    <header class="container mx-auto py-4">
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            >
+              <li><a>Home</a></li>
+              <li>
+                <a>Shop</a>
+              </li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-xl flex justify-center items-center">
+            <img src="/images/logo.webp" alt="logo" />
+            <span class="text-3xl">Peddy</span>
+          </a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Home</a></li>
+            <li>
+              <a>Shop</a>
+            </li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="rounded-full border py-2 px-3"
+            ><span class="material-symbols-outlined"> person </span></a
+          >
+        </div>
+      </div>
+    </header>
+    <!-- main section -->
+    <main class="container mx-auto mb-10">
+      <!-- hero -->
+      <div class="flex flex-col justify-center items-center gap-6">
+        <p class="text-2xl">Bringing Families Together ❤️‍🔥</p>
+        <p class="text-6xl font-bold w-1/2 text-center">
+          Your Path to Adoption Starts Here
+        </p>
+        <p class="w-1/2 text-center">
+          Welcome to Peddy, your one-stop destination for all things pet care!
+          From nutritious food to playful toys and expert grooming services,
+          we’ve got everything to keep your furry friends happy and healthy.
+        </p>
+        <button class="btn text-white bg-[#0E7A81] px-6">
+          <a href="#yourfriend">View More</a>
+        </button>
+      </div>
+      <div class="flex justify-center items-center my-5">
+        <img src="/images/pet.webp" alt="" />
+      </div>
+
+      <!-- adopt your best friend -->
+      <section
+        id="yourfriend"
+        class="flex flex-col justify-center items-center mt-10"
+      >
+        <div class="flex flex-col justify-center items-center gap-y-5">
+          <p class="text-center text-4xl font-semibold">
+            Find Your Perfect Pet Companion
+          </p>
+          <p class="text-center w-1/2">
+            Discover the joy of adopting a loyal friend who will bring endless
+            love and happiness into your life. Browse our selection of adorable
+            pets ready to join your family today and give them a forever home.
+          </p>
+        </div>
+
+        <div
+          id="categories"
+          class="grid grid-cols-2 lg:px-0 px-5 lg:grid-cols-4 w-full gap-4 mt-10"
+        ></div>
+      </section>
+
+      <!-- featured pets -->
+      <section class="mt-5 px-5 lg:px-0">
+        <div class="flex justify-between mb-4">
+          <p class="font-bold text-2xl">Best Deal For You</p>
+          <button id="sortbyprice" class="btn text-white bg-[#0E7A81] px-6">
+            Sort by Price
+          </button>
+        </div>
+
+        <!-- cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-4">
+          <div
+            id="cards"
+            class="grid grid-cols-1 lg:px-0 px-5 lg:grid-cols-3 lg:col-span-3 gap-5"
+          >
+            <span class="loading loading-dots loading-lg"></span>
+          </div>
+
+          <!-- only images 1 cols -->
+          <div class="lg:col-span-1 px-5 md:px-0 lg:px-0 mt-4 md:mt-0 lg:mt-0">
+            <div
+              id="likedimages"
+              class="grid grid-cols-2 w-full border rounded-lg gap-3"
+            ></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer class="bg-[#131313] text-white py-10">
+      <div
+        class="grid grid-cols-1 lg:grid-cols-3 container mx-auto justify-between"
+      >
+        <!-- left -->
+        <div class="flex flex-col justify-center lg:justify-start">
+          <a class="text-xl flex justify-center lg:justify-start gap-2">
+            <img src="/images/logo.webp" alt="logo" />
+            <span class="text-2xl">Peddy</span>
+          </a>
+          <ul
+            class="flex flex-col text-center lg:text-start justify-center lg:justify-start"
+          >
+            <li>Location: Dhaka, Bangladesh</li>
+            <li>Phone: +31 85 964 47 25</li>
+            <li>Email: sagarkarmoker.official@gmail.com</li>
+            <li>Openings hours: 9.00 AM - 5.00 PM</li>
+          </ul>
+          <div class="flex justify-center lg:justify-start gap-3 mt-4">
+            <a href="#">
+              <img class="w-12 h-12" src="./images/facebook.png" alt="" />
+            </a>
+            <a href="#"
+              ><img class="w-12 h-12" src="./images/insta.png" alt=""
+            /></a>
+            <a href="#"
+              ><img class="w-12 h-12" src="./images/yt.png" alt=""
+            /></a>
+            <a href="#"
+              ><img class="w-12 h-12" src="./images/x.png" alt=""
+            /></a>
+          </div>
+        </div>
+        <!-- middle -->
+        <div class="flex flex-col justify-center items-center mt-4">
+          <p class="font-bold text-lg">Useful links</p>
+          <ul class="flex flex-col justify-center items-start">
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Animals</li>
+            <li>Foundation</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <!-- right -->
+        <div class="flex justify-center mt-4 lg:justify-end">
+          <div class="flex flex-col gap-4">
+            <p class="font-bold text-lg flex justify-start">Drop a message</p>
+            <input
+              type="text"
+              placeholder="Type here"
+              class="input input-bordered w-full max-w-xs bg-[#FFFFFF] opacity-60"
+            />
+            <button
+              class="btn btn-active text-white bg-[#0E7A81] border-collapse max-w-xs"
+            >
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- script -->
+    <script src="./js/allpets.js"></script>
+    <script src="./js/buttons.js"></script>
+    <script src="./js/sort.js"></script>
+  </body>
+</html>
