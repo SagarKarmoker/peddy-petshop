@@ -16,4 +16,4 @@ Peddy is a web-based platform that helps users find, adopt, and manage pets. Bui
 3. **Template Literals:** For dynamic HTML content generation.
 4. **Destructuring:** Simplifies access to object properties.
 
-### Live website:
+### Live website: https://sagarkarmoker.github.io/peddy-petshop/
