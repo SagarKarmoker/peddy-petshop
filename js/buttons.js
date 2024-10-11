@@ -48,12 +48,15 @@ const fetchByCategory = async (category) => {
       // chaning btn color
       const btn = document.getElementById(category.toString().toLowerCase());
       btn.classList.add("bg-slate-200");
+      btn.classList.add("rounded-full");
+      btn.classList.remove("rounded-lg");
 
       //  removing bg color from other btns
       const allBtns = document.querySelectorAll("#categories button");
       allBtns.forEach((button) => {
         if (button.id !== category.toString().toLowerCase()) {
           button.classList.remove("bg-slate-200");
+          button.classList.remove("rounded-full");
         }
       });
 
